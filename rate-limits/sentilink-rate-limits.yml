@@ -1,0 +1,55 @@
+name: SentiLink Rate Limits
+description: >-
+  SentiLink does not publish specific rate limit figures publicly. The platform
+  is designed for real-time, high-volume use by financial institutions and
+  returns responses with measured latency (typically under 300ms based on
+  observed API example data). Rate limits are determined by enterprise contract
+  terms. The TCVS API is described as supporting high-volume Treasury check
+  verification workloads.
+url: https://www.sentilink.com/product-overview
+created: '2026-06-13'
+modified: '2026-06-13'
+rateLimits:
+  - name: Production API
+    description: >-
+      Rate limits for the production API (api.sentilink.com) are governed by
+      enterprise contract terms and are not publicly disclosed. The system is
+      built for real-time, high-volume financial institution workloads.
+    endpoint: https://api.sentilink.com
+    limit: Not publicly disclosed
+    window: Per contract
+    notes: Contact SentiLink sales or your partner success manager for specifics.
+  - name: Sandbox API
+    description: >-
+      The sandbox environment (api.sandbox-sentilink.com) is available for
+      integration testing. Rate limits in the sandbox may differ from production
+      and are set per account agreement.
+    endpoint: https://api.sandbox-sentilink.com
+    limit: Not publicly disclosed
+    window: Per account
+    notes: >-
+      Sandbox is used for testing integrations before going live. Consult
+      SentiLink documentation or support for sandbox-specific limits.
+  - name: TCVS API
+    description: >-
+      The Treasury Check Verification Service (TCVS) API is described as
+      designed for real-time, high-volume Treasury check verification. No
+      specific rate limit numbers are published.
+    endpoint: https://api.sentilink.com
+    limit: High-volume (exact figures undisclosed)
+    window: Per request / real-time
+    notes: Free for all financial institutions; volume capacity contact SentiLink.
+latencyObserved:
+  value: 295
+  unit: milliseconds
+  source: SentiLink API example response (example data, not a guaranteed SLA)
+authentication:
+  description: >-
+    Authentication details are not publicly documented. Based on enterprise REST
+    API patterns and partner integrations (e.g., Alloy), HTTP Basic Auth or
+    API key-based authentication via request headers is the most likely
+    mechanism. Consult the SentiLink integration documentation provided upon
+    account setup.
+  methods:
+    - Basic Auth (inferred)
+    - API Key (inferred)

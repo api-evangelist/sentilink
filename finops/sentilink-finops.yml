@@ -1,0 +1,59 @@
+name: SentiLink FinOps
+description: >-
+  Financial operations guidance for teams consuming SentiLink fraud prevention
+  APIs. SentiLink pricing is enterprise-negotiated and volume-based, making
+  cost management dependent on contract negotiation, API call discipline, and
+  appropriate product selection. The TCVS API is the only publicly free tier.
+url: https://www.sentilink.com/product-overview
+created: '2026-06-13'
+modified: '2026-06-13'
+costModel:
+  type: Volume-based enterprise contract
+  billingUnit: Per API call
+  publicPricing: false
+  freeOffering:
+    name: TCVS API
+    description: Free Treasury check verification API for all financial institutions.
+    url: https://resources.sentilink.com/blog/sentilink-tcvs-api
+  notes: >-
+    All paid tiers require a custom enterprise agreement. No self-serve
+    pay-as-you-go pricing is available. Pricing is negotiated based on expected
+    call volume, product combination, and institution size. G2 reviewers
+    characterize SentiLink as a premium-priced solution relative to the
+    enterprise fraud market.
+recommendations:
+  - name: Scope API calls to application events only
+    description: >-
+      Call the fraud scoring API at meaningful decision points (account
+      application, login anomaly, credit line increase) rather than on every
+      user action to avoid unnecessary per-call charges.
+  - name: Leverage the single-endpoint design
+    description: >-
+      SentiLink offers a single endpoint that returns multiple scores in one
+      call. Use this to retrieve all needed signals (synthetic, ID theft,
+      first-party) in a single API call rather than multiple calls, reducing
+      cost and latency.
+  - name: Negotiate volume tiers during contract renewal
+    description: >-
+      Because billing is volume-based, forecasting API call volume accurately
+      before contract renewal enables better tier negotiation. Track monthly
+      call counts via the SentiLink dashboard.
+  - name: Use SFTP for historical batch analysis
+    description: >-
+      For retroactive fraud analysis or bulk portfolio review, use the SFTP
+      batch upload option rather than API calls to avoid per-call costs on
+      non-real-time workloads.
+  - name: Utilize the sandbox for all testing
+    description: >-
+      Use api.sandbox-sentilink.com for all development, QA, and integration
+      testing to avoid incurring production API call charges during non-production
+      workloads.
+  - name: Monitor via the dashboard
+    description: >-
+      Use dashboard.sentilink.com to track API call volumes and flag unexpected
+      spikes that could indicate integration bugs inflating costs.
+observability:
+  dashboard: https://dashboard.sentilink.com
+  statusPage: https://status.sentilink.com/
+  sandboxEndpoint: https://api.sandbox-sentilink.com
+  productionEndpoint: https://api.sentilink.com

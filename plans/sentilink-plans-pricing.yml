@@ -1,0 +1,54 @@
+name: SentiLink Plans and Pricing
+description: >-
+  SentiLink uses enterprise and custom pricing for its fraud prevention API
+  platform. Pricing is not publicly listed and is negotiated based on volume,
+  product suite, and institutional type. The TCVS (Treasury Check Verification
+  Service) API is offered at no cost to all financial institutions. Other
+  products require direct engagement with SentiLink's sales team for a custom
+  quote.
+url: https://www.sentilink.com/product-overview
+created: '2026-06-13'
+modified: '2026-06-13'
+plans:
+  - name: TCVS API — Free
+    description: >-
+      Programmatic access to the U.S. Treasury Check Verification Service
+      (TCVS) REST API is provided free of charge to all financial institutions,
+      with no strings attached. Institutions can request access through a
+      SentiLink partner success manager or via the contact form.
+    url: https://resources.sentilink.com/blog/sentilink-tcvs-api
+    price: 0
+    currency: USD
+    unit: per call
+    features:
+      - Real-time Treasury check verification
+      - Payee name validation
+      - Serial number and amount match
+      - No PII storage
+      - REST API access
+  - name: Enterprise — Custom
+    description: >-
+      Custom enterprise agreements for access to the full SentiLink fraud
+      prevention platform, including Synthetic Abuse Score, ID Theft Score,
+      First-Party Fraud Score, and PII Risk Scores. Pricing is volume-based and
+      determined through direct sales engagement. Typically deployed by large
+      U.S. banks, credit unions, and fintech companies.
+    url: https://www.sentilink.com/product-overview
+    price: Contact for pricing
+    currency: USD
+    unit: per API call (volume-based)
+    features:
+      - Synthetic Abuse Score
+      - ID Theft Score
+      - First-Party Fraud Score
+      - PII Risk Scores
+      - Single-endpoint API for all products
+      - Sandbox environment (api.sandbox-sentilink.com)
+      - Dashboard access (dashboard.sentilink.com)
+      - SFTP batch upload option
+      - Real-time REST API integration
+      - Reason codes for model explainability
+notes: >-
+  G2 reviewers note that SentiLink pricing is on the higher end for enterprise
+  fraud solutions. No self-serve or usage-based public tier exists beyond the
+  free TCVS API. Contact sales at sentilink.com for a custom quote.

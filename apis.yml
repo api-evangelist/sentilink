@@ -1,0 +1,97 @@
+aid: sentilink
+name: SentiLink
+description: >-
+  SentiLink is an identity fraud prevention platform that empowers financial
+  institutions to transact confidently by stopping synthetic identity fraud,
+  account takeover, and first-party fraud at the point of account application
+  and beyond. The platform provides a REST API delivering real-time scores and
+  signals derived from behavioral and identity data, enabling lenders, banks,
+  credit unions, and fintechs to make instant, accurate decisions without adding
+  friction to the onboarding experience.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/sentilink/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Fraud Detection
+  - Identity Verification
+  - Synthetic Identity
+  - Account Takeover
+  - First-Party Fraud
+  - Financial Services
+  - Risk Scoring
+  - Fintech
+  - KYC
+  - AML
+apis:
+  - aid: sentilink:sentilink-fraud-scores-api
+    name: SentiLink Fraud Scores API
+    description: >-
+      REST API providing real-time fraud risk scores including Synthetic Abuse
+      Score, ID Theft Score, First-Party Fraud Score, and PII Risk Scores.
+      Returns a numeric score (0–999) along with reason codes explaining the
+      fraud risk factors for each identity submitted during account application
+      or onboarding. Integrates via a single endpoint serving all application
+      risk products.
+    humanURL: https://www.sentilink.com/product-overview
+    baseURL: https://api.sentilink.com
+    tags:
+      - Fraud Scores
+      - Synthetic Identity
+      - Identity Theft
+      - First-Party Fraud
+      - Risk Scoring
+    properties:
+      - type: Documentation
+        url: https://www.sentilink.com/product-overview
+      - type: Sandbox
+        url: https://api.sandbox-sentilink.com
+  - aid: sentilink:sentilink-tcvs-api
+    name: SentiLink TCVS API
+    description: >-
+      REST API providing programmatic access to the U.S. Treasury Check
+      Verification Service (TCVS), enabling real-time, high-volume Treasury
+      check validation for financial institutions. Accepts check symbol number,
+      serial number, amount, bank routing number, and optional payee name, and
+      returns match results against Treasury department records. Free for all
+      financial institutions.
+    humanURL: https://resources.sentilink.com/blog/sentilink-tcvs-api
+    baseURL: https://api.sentilink.com
+    tags:
+      - Treasury Check
+      - Check Verification
+      - TCVS
+      - Check Fraud
+    properties:
+      - type: Documentation
+        url: https://resources.sentilink.com/blog/sentilink-tcvs-api
+common:
+  - type: Website
+    url: https://www.sentilink.com/
+  - type: Documentation
+    url: https://www.sentilink.com/product-overview
+  - type: Blog
+    url: https://resources.sentilink.com/blog
+  - type: GitHubOrg
+    url: https://github.com/sentilink
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/sentilink/
+  - type: X
+    url: https://x.com/sentilink
+  - type: Pricing
+    url: https://www.sentilink.com/product-overview
+  - type: StatusPage
+    url: https://status.sentilink.com/
+  - type: Sandbox
+    url: https://api.sandbox-sentilink.com
+  - type: Plans
+    url: plans/sentilink-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/sentilink-rate-limits.yml
+  - type: FinOps
+    url: finops/sentilink-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
