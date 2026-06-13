@@ -1,0 +1,122 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "sentilink": "https://www.sentilink.com/vocab#",
+    "aid": "@id",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "provider": "schema:provider",
+    "FinancialService": "schema:FinancialService",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "WebAPI": "schema:WebAPI",
+    "fraudScore": {
+      "@id": "sentilink:fraudScore",
+      "@type": "schema:Number"
+    },
+    "syntheticAbuseScore": {
+      "@id": "sentilink:syntheticAbuseScore",
+      "@type": "schema:Number"
+    },
+    "idTheftScore": {
+      "@id": "sentilink:idTheftScore",
+      "@type": "schema:Number"
+    },
+    "firstPartyFraudScore": {
+      "@id": "sentilink:firstPartyFraudScore",
+      "@type": "schema:Number"
+    },
+    "piiRiskScore": {
+      "@id": "sentilink:piiRiskScore",
+      "@type": "schema:Number"
+    },
+    "reasonCode": {
+      "@id": "sentilink:reasonCode",
+      "@type": "schema:Text"
+    },
+    "tcvsValidation": {
+      "@id": "sentilink:tcvsValidation",
+      "@type": "schema:Boolean"
+    },
+    "checkSymbolNumber": {
+      "@id": "sentilink:checkSymbolNumber",
+      "@type": "schema:Text"
+    },
+    "checkSerialNumber": {
+      "@id": "sentilink:checkSerialNumber",
+      "@type": "schema:Text"
+    },
+    "checkAmount": {
+      "@id": "sentilink:checkAmount",
+      "@type": "schema:Number"
+    },
+    "bankRoutingNumber": {
+      "@id": "sentilink:bankRoutingNumber",
+      "@type": "schema:Text"
+    },
+    "payeeName": {
+      "@id": "sentilink:payeeName",
+      "@type": "schema:Text"
+    },
+    "identityFraud": {
+      "@id": "sentilink:identityFraud",
+      "@type": "schema:Boolean"
+    },
+    "accountTakeover": {
+      "@id": "sentilink:accountTakeover",
+      "@type": "schema:Boolean"
+    },
+    "syntheticIdentity": {
+      "@id": "sentilink:syntheticIdentity",
+      "@type": "schema:Boolean"
+    },
+    "sandboxEnvironment": {
+      "@id": "sentilink:sandboxEnvironment",
+      "@type": "schema:URL"
+    },
+    "baseURL": {
+      "@id": "sentilink:baseURL",
+      "@type": "schema:URL"
+    },
+    "scoreRange": {
+      "@id": "sentilink:scoreRange",
+      "@type": "schema:Text"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://www.sentilink.com",
+      "@type": ["schema:Organization", "FinancialService"],
+      "name": "SentiLink",
+      "description": "SentiLink is an identity fraud prevention platform that empowers financial institutions to transact confidently by stopping synthetic identity fraud, account takeover, and first-party fraud at the point of account application and beyond.",
+      "url": "https://www.sentilink.com",
+      "schema:sameAs": [
+        "https://www.linkedin.com/company/sentilink/",
+        "https://x.com/sentilink",
+        "https://github.com/sentilink"
+      ]
+    },
+    {
+      "@id": "https://api.sentilink.com",
+      "@type": "WebAPI",
+      "name": "SentiLink Fraud Scores API",
+      "description": "REST API providing real-time fraud risk scores including Synthetic Abuse Score, ID Theft Score, First-Party Fraud Score, and PII Risk Scores.",
+      "schema:endpointURL": "https://api.sentilink.com",
+      "sandboxEnvironment": "https://api.sandbox-sentilink.com",
+      "scoreRange": "0-999",
+      "provider": {
+        "@id": "https://www.sentilink.com"
+      }
+    },
+    {
+      "@id": "https://api.sentilink.com/tcvs",
+      "@type": "WebAPI",
+      "name": "SentiLink TCVS API",
+      "description": "REST API providing programmatic access to the U.S. Treasury Check Verification Service (TCVS), enabling real-time, high-volume Treasury check validation for financial institutions.",
+      "provider": {
+        "@id": "https://www.sentilink.com"
+      }
+    }
+  ]
+}
