@@ -1,86 +1,13 @@
 {
-  "aid": "sentilink",
-  "url": "https://resources.sentilink.com/blog",
-  "updated": "2026-06-13",
-  "blogs": [
-    {
-      "title": "What Happened to Identity Fraud Rates in 2H 2025?",
-      "url": "https://resources.sentilink.com/blog/what-happened-to-identity-fraud-rates-in-2h-2025",
-      "published": ""
-    },
-    {
-      "title": "Introducing SentiLink Intercept: Precision Tools for High Stakes Fraud Decisions",
-      "url": "https://resources.sentilink.com/blog/introducing-sentilink-intercept",
-      "published": ""
-    },
-    {
-      "title": "$1.8 Million in Cars Went Missing. Could a Machine Learning Model Have Prevented It?",
-      "url": "https://resources.sentilink.com/blog/1.8-million-in-cars-went-missing.-could-a-machine-learning-model-have-prevented-it",
-      "published": ""
-    },
-    {
-      "title": "From Silk Road to Synthetic Faces: The Evolution of the Online Fake Document Economy",
-      "url": "https://resources.sentilink.com/blog/the-evolution-of-the-online-fake-document-economy",
-      "published": ""
-    },
-    {
-      "title": "Something Went Bump in the Data",
-      "url": "https://resources.sentilink.com/blog/something-went-bump-in-the-data",
-      "published": ""
-    },
-    {
-      "title": "Approaching 1 Million: Our Journey with TCVS",
-      "url": "https://resources.sentilink.com/blog/approaching-1-million-our-journey-with-tcvs",
-      "published": ""
-    },
-    {
-      "title": "How \"Centralized Dealer Operations\" (CDOs) Work, and Why They Matter for Fraud",
-      "url": "https://resources.sentilink.com/blog/how-centralized-dealer-operations-cdos-work-and-why-they-matter-for-fraud",
-      "published": ""
-    },
-    {
-      "title": "Behind the Numbers: What Goes Into a SentiLink Retrostudy",
-      "url": "https://resources.sentilink.com/blog/what-goes-into-a-sentilink-retrostudy",
-      "published": ""
-    },
-    {
-      "title": "The Montana Loophole Is Closing. Are Lenders Holding the Bag?",
-      "url": "https://resources.sentilink.com/blog/the-montana-loophole-is-closing.-are-lenders-holding-the-bag",
-      "published": ""
-    },
-    {
-      "title": "Inside \"Pell Running,\" the Federal Student Aid Fraud Congress Is Trying to Stop",
-      "url": "https://resources.sentilink.com/blog/inside-pell-running-the-federal-student-aid-fraud-congress-is-trying-to-stop",
-      "published": ""
-    },
-    {
-      "title": "What We Learned About First-Party Fraud at on:fraud",
-      "url": "https://resources.sentilink.com/blog/what-we-learned-about-first-party-fraud-at-onfraud",
-      "published": ""
-    },
-    {
-      "title": "Fraudsters are Exploiting the Abandoned Identities of Expats",
-      "url": "https://resources.sentilink.com/blog/fraudsters-are-exploiting-the-abandoned-identities-of-expats",
-      "published": ""
-    },
-    {
-      "title": "Do Fraudsters Take Holidays? It's Complicated",
-      "url": "https://resources.sentilink.com/blog/do-fraudsters-take-holidays-its-complicated",
-      "published": ""
-    },
-    {
-      "title": "First-Party Fraud: What is it and How Do You Stop It?",
-      "url": "https://resources.sentilink.com/blog/first-party-fraud-what-is-it-and-how-do-you-stop-it",
-      "published": ""
-    },
-    {
-      "title": "SentiLink TCVS API",
-      "url": "https://resources.sentilink.com/blog/sentilink-tcvs-api",
-      "published": ""
-    }
-  ],
   "repo": "sentilink",
   "feeds": [
+    {
+      "source": "https://resources.sentilink.com/blog/rss.xml",
+      "feed_url": "https://resources.sentilink.com/blog/rss.xml",
+      "title": "",
+      "saved": 1,
+      "method": "feed"
+    },
     {
       "source": "https://www.sentilink.com/product-overview",
       "feed_url": "https://www.sentilink.com/product-overview",
@@ -89,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 2
 }
