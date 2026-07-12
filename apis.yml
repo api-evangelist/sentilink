@@ -68,6 +68,10 @@ apis:
       - type: Documentation
         url: https://resources.sentilink.com/blog/sentilink-tcvs-api
 common:
+  - type: TrustCenter
+    url: security/sentilink-trust-center.yml
+  - type: DomainSecurity
+    url: security/sentilink-domain-security.yml
   - type: Website
     url: https://www.sentilink.com/
   - type: Documentation
