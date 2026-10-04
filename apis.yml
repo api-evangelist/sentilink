@@ -38,12 +38,12 @@ created: '2026-06-13'
 modified: '2026-06-13'
 specificationVersion: '0.23'
 tags:
-  - Fraud Detection
+  - Fraud Prevention
   - Identity Verification
   - Synthetic Identity
   - Account Takeover
   - First-Party Fraud
-  - Financial-Services
+  - Financial Services
   - Risk Scoring
   - Fintech
   - KYC
@@ -59,6 +59,7 @@ tags_raw:
   - Fintech
   - KYC
   - AML
+  - Financial-Services
 apis:
   - aid: sentilink:sentilink-fraud-scores-api
     name: SentiLink Fraud Scores API
