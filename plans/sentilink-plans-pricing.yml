@@ -57,3 +57,25 @@ notes: >-
   G2 reviewers note that SentiLink pricing is on the higher end for enterprise
   fraud solutions. No self-serve or usage-based public tier exists beyond the
   free TCVS API. Contact sales at sentilink.com for a custom quote.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - metered
+  units:
+  - request
+  plans:
+  - name: TCVS API — Free
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - request
+    periods: []
+  - name: Enterprise — Custom
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - request
+    periods: []
