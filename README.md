@@ -66,23 +66,111 @@
 
 SentiLink is an identity fraud prevention platform that empowers financial institutions to transact confidently by stopping synthetic identity fraud, account takeover, and first-party fraud at the point of account application and beyond. The platform provides a REST API delivering real-time scores and signals derived from behavioral and identity data, enabling lenders, banks, credit unions, and fintechs to make instant, accurate decisions without adding friction to the onboarding experience.
 
-Founded in 2017 and headquartered in San Francisco, CA, SentiLink serves large U.S. banks, credit unions, and fintech unicorns.
+**Areas:** Fraud Prevention · Identity Verification · Synthetic Identity · Account Takeover · First-Party Fraud · Financial Services · Risk Scoring · Fintech · KYC · AML
 
-## APIs
+## SentiLink on APIs.io
 
-- **Fraud Scores API** — Real-time risk scores (Synthetic Abuse, ID Theft, First-Party Fraud, PII Risk) returned from a single REST endpoint with reason codes for explainability.
-- **TCVS API** — Treasury Check Verification Service REST API for real-time, high-volume Treasury check validation; free for all financial institutions.
+Everything profiled for SentiLink is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sentilink/](https://apis.io/providers/sentilink/)** — or go straight to one of the APIs or properties below.
 
-## Resources
+### APIs (2)
+
+- [SentiLink Fraud Scores API](https://apis.io/apis/sentilink/sentilink-fraud-scores-api/) — REST API providing real-time fraud risk scores including Synthetic Abuse Score, ID Theft Score, First-Party Fraud Score, and PII Risk Scores. Returns a…
+- [SentiLink TCVS API](https://apis.io/apis/sentilink/sentilink-tcvs-api/) — REST API providing programmatic access to the U.S. Treasury Check Verification Service (TCVS), enabling real-time, high-volume Treasury check validation for…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Sentilink Context](https://apis.io/jsonld/sentilink/sentilink-context/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Sentilink Domain Security](https://apis.io/security/sentilink/sentilink-domain-security/)
+- [Sentilink Trust Center](https://apis.io/security/sentilink/sentilink-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Sentilink Plans Pricing](https://apis.io/plans/sentilink/sentilink-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Sentilink Rate Limits](https://apis.io/rate-limits/sentilink/sentilink-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Sentilink Finops](https://apis.io/finops/sentilink/sentilink-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.sentilink.com/)
-- [Product Overview](https://www.sentilink.com/product-overview)
+- [Documentation](https://www.sentilink.com/product-overview)
+- [Pricing](https://www.sentilink.com/product-overview)
 - [Blog](https://resources.sentilink.com/blog)
-- [Status Page](https://status.sentilink.com/)
-- [GitHub](https://github.com/sentilink)
-- [LinkedIn](https://www.linkedin.com/company/sentilink/)
-- [X](https://x.com/sentilink)
+- [Status](https://status.sentilink.com/)
 
-## APIs.json
+## API Evangelist rating
 
-This repository is an [APIs.json](https://apisjson.org/) profile for SentiLink maintained by [API Evangelist](https://apievangelist.com/).
+**Kin Score 20.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 14.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 23.7 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sentilink/](https://apis.io/providers/sentilink/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SentiLink: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sentilink/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
